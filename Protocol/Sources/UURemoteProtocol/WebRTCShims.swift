@@ -2,7 +2,7 @@ import Foundation
 
 #if canImport(LiveKitWebRTC)
 import LiveKitWebRTC
-public typealias UUVideoRendererView = LKRTCVideoView
+public typealias UUVideoRendererView = LKRTCMTLVideoView
 public let uuWebRTCLinked = true
 #elseif canImport(WebRTC)
 import WebRTC

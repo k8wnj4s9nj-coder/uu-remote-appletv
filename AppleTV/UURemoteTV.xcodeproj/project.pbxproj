@@ -128,6 +128,7 @@
 			);
 			name = UURemoteTV;
 			packageProductDependencies = (
+				1735C4555A8E44CF85D83F86 /* LiveKitWebRTC */,
 			);
 			productName = UURemoteTV;
 			productReference = DA660AC4A3CD450F8418AE35 /* UURemoteTV.app */;
@@ -156,6 +157,7 @@
 			productRefGroup = B7EBA39386104D528C9FEF08 /* Products */;
 			projectDirPath = "";
 			packageReferences = (
+				54EF7E902300479E91B26CC7 /* XCRemoteSwiftPackageReference "webrtc-xcframework" */,
 			);
 			projectRoot = "";
 			targets = (
@@ -320,6 +322,26 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54EF7E902300479E91B26CC7 /* XCRemoteSwiftPackageReference "webrtc-xcframework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livekit/webrtc-xcframework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 125.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1735C4555A8E44CF85D83F86 /* LiveKitWebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54EF7E902300479E91B26CC7 /* XCRemoteSwiftPackageReference "webrtc-xcframework" */;
+			productName = LiveKitWebRTC;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 	};
 	rootObject = 7B66D69550524A45B5116FE8 /* Project object */;

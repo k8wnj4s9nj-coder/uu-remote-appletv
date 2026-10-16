@@ -5,12 +5,12 @@ import UIKit
 
 #if canImport(LiveKitWebRTC)
 import LiveKitWebRTC
-private typealias _Track = LKRTCVideoTrack
-private typealias _View = LKRTCVideoView
+typealias _Track = LKRTCVideoTrack
+typealias _View = LKRTCMTLVideoView
 #elseif canImport(WebRTC)
 import WebRTC
-private typealias _Track = RTCVideoTrack
-private typealias _View = RTCMTLVideoView
+typealias _Track = RTCVideoTrack
+typealias _View = RTCMTLVideoView
 #endif
 
 struct RemoteVideoView: UIViewRepresentable {
@@ -20,7 +20,7 @@ struct RemoteVideoView: UIViewRepresentable {
         let v = _View(frame: .zero)
         v.contentMode = .scaleAspectFit
 #if canImport(LiveKitWebRTC)
-        // LKRTCVideoView mirrors RTCVideoView
+        // LKRTCMTLVideoView is LiveKit's Metal renderer (not LKRTCVideoView)
 #endif
         return v
     }

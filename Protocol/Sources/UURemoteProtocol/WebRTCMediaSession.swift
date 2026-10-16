@@ -12,11 +12,12 @@ private typealias _Constraints = LKRTCMediaConstraints
 private typealias _Config = LKRTCConfiguration
 private typealias _IceServer = LKRTCIceServer
 private typealias _TxInit = LKRTCRtpTransceiverInit
-private typealias _VideoTrack = LKRTCVideoTrack
+typealias _VideoTrack = LKRTCVideoTrack
 private typealias _Stream = LKRTCMediaStream
 private typealias _DC = LKRTCDataChannel
 private typealias _DCConfig = LKRTCDataChannelConfiguration
 private func _initSSL() { LKRTCInitializeSSL() }
+public typealias UURemoteVideoTrack = LKRTCVideoTrack
 #elseif canImport(WebRTC)
 import WebRTC
 private typealias _PC = RTCPeerConnection
@@ -27,14 +28,13 @@ private typealias _Constraints = RTCMediaConstraints
 private typealias _Config = RTCConfiguration
 private typealias _IceServer = RTCIceServer
 private typealias _TxInit = RTCRtpTransceiverInit
-private typealias _VideoTrack = RTCVideoTrack
+typealias _VideoTrack = RTCVideoTrack
 private typealias _Stream = RTCMediaStream
 private typealias _DC = RTCDataChannel
 private typealias _DCConfig = RTCDataChannelConfiguration
 private func _initSSL() { RTCInitializeSSL() }
+public typealias UURemoteVideoTrack = RTCVideoTrack
 #endif
-
-public typealias UURemoteVideoTrack = _VideoTrack
 
 /// Real WebRTC controller session: be-controlled → offer → answer → remote video track.
 public final class UUWebRTCMediaSession: NSObject, UUMediaSession {
@@ -210,7 +210,9 @@ public final class UUWebRTCMediaSession: NSObject, UUMediaSession {
                 } else {
                     self.hasRemoteDescription = true
                     self.onConnectionState?("remote answer applied")
-                    for c in self.pendingRemoteCandidates { self.peer?.add(c) }
+                    for c in self.pendingRemoteCandidates {
+                        self.peer?.add(c) { _ in }
+                    }
                     self.pendingRemoteCandidates.removeAll()
                 }
                 cont.resume()
@@ -235,7 +237,7 @@ public final class UUWebRTCMediaSession: NSObject, UUMediaSession {
         guard let candStr, !candStr.isEmpty else { return }
         let ice = _Ice(sdp: candStr, sdpMLineIndex: mline, sdpMid: mid)
         if hasRemoteDescription {
-            peer?.add(ice)
+            peer?.add(ice) { _ in }
         } else {
             pendingRemoteCandidates.append(ice)
         }
@@ -288,19 +290,20 @@ fileprivate final class PeerDelegateBox: NSObject {
 #if canImport(LiveKitWebRTC)
 import LiveKitWebRTC
 extension PeerDelegateBox: LKRTCPeerConnectionDelegate {
-    func peerConnection(_ peerConnection: LKRTCPeerConnection, didChange stateChanged: RTCSignalingState) {}
+    // Signatures aligned with livekit/client-sdk-swift Transport.swift (LKRTC* state enums).
+    func peerConnection(_ peerConnection: LKRTCPeerConnection, didChange stateChanged: LKRTCSignalingState) {}
     func peerConnection(_ peerConnection: LKRTCPeerConnection, didAdd stream: LKRTCMediaStream) {
         if let t = stream.videoTracks.first { owner?.noteVideoTrack(t) }
     }
     func peerConnection(_ peerConnection: LKRTCPeerConnection, didRemove stream: LKRTCMediaStream) {}
     func peerConnectionShouldNegotiate(_ peerConnection: LKRTCPeerConnection) {}
-    func peerConnection(_ peerConnection: LKRTCPeerConnection, didChange newState: RTCIceConnectionState) {
+    func peerConnection(_ peerConnection: LKRTCPeerConnection, didChange newState: LKRTCIceConnectionState) {
         owner?.onConnectionState?("ICE: \(String(describing: newState))")
         if newState == .failed {
             owner?.onConnectionState?("ICE failed — NAT/firewall; host may need TURN from cloud")
         }
     }
-    func peerConnection(_ peerConnection: LKRTCPeerConnection, didChange newState: RTCIceGatheringState) {}
+    func peerConnection(_ peerConnection: LKRTCPeerConnection, didChange newState: LKRTCIceGatheringState) {}
     func peerConnection(_ peerConnection: LKRTCPeerConnection, didGenerate candidate: LKRTCIceCandidate) {
         owner?.emitLocalCandidate(candidate)
     }
@@ -308,7 +311,7 @@ extension PeerDelegateBox: LKRTCPeerConnectionDelegate {
     func peerConnection(_ peerConnection: LKRTCPeerConnection, didOpen dataChannel: LKRTCDataChannel) {
         owner?.onFrameHint?("data channel: \(dataChannel.label)")
     }
-    func peerConnection(_ peerConnection: LKRTCPeerConnection, didChange newState: RTCPeerConnectionState) {
+    func peerConnection(_ peerConnection: LKRTCPeerConnection, didChange newState: LKRTCPeerConnectionState) {
         owner?.onConnectionState?("PC: \(String(describing: newState))")
     }
     func peerConnection(_ peerConnection: LKRTCPeerConnection, didAdd rtpReceiver: LKRTCRtpReceiver, streams: [LKRTCMediaStream]) {
