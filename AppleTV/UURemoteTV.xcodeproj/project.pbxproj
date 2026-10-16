@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		627508307BC64E09AB42E831 /* ConnectOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConnectOptions.swift; path = ../../Protocol/Sources/UURemoteProtocol/ConnectOptions.swift; sourceTree = "<group>"; };
+		9D80A6E83FAB4BACA2409339 /* WebRTCShims.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebRTCShims.swift; path = ../../Protocol/Sources/UURemoteProtocol/WebRTCShims.swift; sourceTree = "<group>"; };
+		F6366D87432E46DCACC2DCA6 /* WebRTCMediaSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebRTCMediaSession.swift; path = ../../Protocol/Sources/UURemoteProtocol/WebRTCMediaSession.swift; sourceTree = "<group>"; };
+		7697BF6957E14E80B59201AC /* RemoteVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteVideoView.swift; sourceTree = "<group>"; };
+		DA660AC4A3CD450F8418AE35 /* UURemoteTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UURemoteTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDBBB82687954E22B37EB166 /* UURemoteTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UURemoteTVApp.swift; sourceTree = "<group>"; };
+		3DAC5BF8F94D4207B03F8A8A /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		12C2FB99440E42EE8A3FD925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E9F8970BB8417F80E6E5F1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		11F8D31FA8024DE5970907FC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8FEEA0EEDAA14CDF9894295B /* DeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListView.swift; sourceTree = "<group>"; };
+		50F6A8A22F08415BA0B4CB9C /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		7170B8F1072F4D9D8ABA51C1 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIConfig.swift; path = ../../Protocol/Sources/UURemoteProtocol/APIConfig.swift; sourceTree = "<group>"; };
+		21A2B610A6314402A2ACD11C /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Credentials.swift; path = ../../Protocol/Sources/UURemoteProtocol/Credentials.swift; sourceTree = "<group>"; };
+		7FEA36AA90804383806D29DC /* HMACSigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HMACSigner.swift; path = ../../Protocol/Sources/UURemoteProtocol/HMACSigner.swift; sourceTree = "<group>"; };
+		10A436EDC1B5414292632583 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Models.swift; path = ../../Protocol/Sources/UURemoteProtocol/Models.swift; sourceTree = "<group>"; };
+		8A3A67D02911470E91715D1A /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HTTPClient.swift; path = ../../Protocol/Sources/UURemoteProtocol/HTTPClient.swift; sourceTree = "<group>"; };
+		0CF117EC9C754B398B7F4433 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginService.swift; path = ../../Protocol/Sources/UURemoteProtocol/LoginService.swift; sourceTree = "<group>"; };
+		3ECB5904ADAB4FD9985978F9 /* DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeviceService.swift; path = ../../Protocol/Sources/UURemoteProtocol/DeviceService.swift; sourceTree = "<group>"; };
+		A5A1A9551DD04349A291FB44 /* SignalingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignalingClient.swift; path = ../../Protocol/Sources/UURemoteProtocol/SignalingClient.swift; sourceTree = "<group>"; };
+		D01696B40A49411F839AFEA4 /* MediaSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MediaSession.swift; path = ../../Protocol/Sources/UURemoteProtocol/MediaSession.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXBuildFile section */
+		13335196380B4DDABE4D8896 /* ConnectOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627508307BC64E09AB42E831 /* ConnectOptions.swift */; };
+		68D3C120E58041C7AB07EFFC /* WebRTCShims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D80A6E83FAB4BACA2409339 /* WebRTCShims.swift */; };
+		7F0E5C8B6D90430DA2F83531 /* WebRTCMediaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6366D87432E46DCACC2DCA6 /* WebRTCMediaSession.swift */; };
+		22BFADF4AFDF45409F6ED265 /* RemoteVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7697BF6957E14E80B59201AC /* RemoteVideoView.swift */; };
+		2030F29E0DF4479BB9D477E4 /* UURemoteTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBB82687954E22B37EB166 /* UURemoteTVApp.swift */; };
+		4E04EED4330947288B5AC730 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAC5BF8F94D4207B03F8A8A /* AppModel.swift */; };
+		E8398A44D08645C38116D370 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9F8970BB8417F80E6E5F1 /* RootView.swift */; };
+		9548F290286D4FB287786FB4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8D31FA8024DE5970907FC /* LoginView.swift */; };
+		4BCCAB237B42446DAF388609 /* DeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEA0EEDAA14CDF9894295B /* DeviceListView.swift */; };
+		C7D52D57DE0D45CB8B929E4B /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F6A8A22F08415BA0B4CB9C /* SessionView.swift */; };
+		DCB20055809B4DCBA0AB8E6E /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7170B8F1072F4D9D8ABA51C1 /* APIConfig.swift */; };
+		FE3F708742F44A25A2A3D28B /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A2B610A6314402A2ACD11C /* Credentials.swift */; };
+		E4EE839793A8442090CEF693 /* HMACSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEA36AA90804383806D29DC /* HMACSigner.swift */; };
+		31631AB742CD41E49BA182D0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A436EDC1B5414292632583 /* Models.swift */; };
+		F8EDBC06AA6B496EB875682B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A67D02911470E91715D1A /* HTTPClient.swift */; };
+		337F1AABBB834173ABC02362 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF117EC9C754B398B7F4433 /* LoginService.swift */; };
+		C701A79BF81A40FD8D5F0203 /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECB5904ADAB4FD9985978F9 /* DeviceService.swift */; };
+		A3977DDBAAC24E90B7A6E830 /* SignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A1A9551DD04349A291FB44 /* SignalingClient.swift */; };
+		1D0A9737C23941BABA34FE60 /* MediaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01696B40A49411F839AFEA4 /* MediaSession.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXGroup section */
+		1D1FBF210C33474A9736686A = {
+			isa = PBXGroup;
+			children = (
+				0DD60B2A7DDF4ABCB5950593 /* UURemoteTV */,
+				07BC5BF1E9B04661B5B1C9CA /* UURemoteProtocol */,
+				B7EBA39386104D528C9FEF08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7EBA39386104D528C9FEF08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA660AC4A3CD450F8418AE35 /* UURemoteTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DD60B2A7DDF4ABCB5950593 /* UURemoteTV */ = {
+			isa = PBXGroup;
+			children = (
+				FDBBB82687954E22B37EB166 /* UURemoteTVApp.swift */,
+				3DAC5BF8F94D4207B03F8A8A /* AppModel.swift */,
+				12C2FB99440E42EE8A3FD925 /* Info.plist */,
+				2BE0DBD2CF644E6B9638A25F /* Views */
+			);
+			path = UURemoteTV;
+			sourceTree = "<group>";
+		};
+		2BE0DBD2CF644E6B9638A25F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7697BF6957E14E80B59201AC /* RemoteVideoView.swift */,
+				43E9F8970BB8417F80E6E5F1 /* RootView.swift */,
+				11F8D31FA8024DE5970907FC /* LoginView.swift */,
+				8FEEA0EEDAA14CDF9894295B /* DeviceListView.swift */,
+				50F6A8A22F08415BA0B4CB9C /* SessionView.swift */
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		07BC5BF1E9B04661B5B1C9CA /* UURemoteProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				627508307BC64E09AB42E831 /* ConnectOptions.swift */,
+				9D80A6E83FAB4BACA2409339 /* WebRTCShims.swift */,
+				F6366D87432E46DCACC2DCA6 /* WebRTCMediaSession.swift */,
+				7170B8F1072F4D9D8ABA51C1 /* APIConfig.swift */,
+				21A2B610A6314402A2ACD11C /* Credentials.swift */,
+				7FEA36AA90804383806D29DC /* HMACSigner.swift */,
+				10A436EDC1B5414292632583 /* Models.swift */,
+				8A3A67D02911470E91715D1A /* HTTPClient.swift */,
+				0CF117EC9C754B398B7F4433 /* LoginService.swift */,
+				3ECB5904ADAB4FD9985978F9 /* DeviceService.swift */,
+				A5A1A9551DD04349A291FB44 /* SignalingClient.swift */,
+				D01696B40A49411F839AFEA4 /* MediaSession.swift */
+			);
+			name = UURemoteProtocol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1CD5A89E8704E07BEFE75E6 /* UURemoteTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A4AE3A9EC94460DBA3697F2 /* Build configuration list for PBXNativeTarget "UURemoteTV" */;
+			buildPhases = (
+				7F4F84D4A2B4412BAED8EED5 /* Sources */,
+				5F37021EC1CF44BC8059EA34 /* Frameworks */,
+				765A18606FD84628BC9072A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UURemoteTV;
+			packageProductDependencies = (
+				1735C4555A8E44CF85D83F86 /* LiveKitWebRTC */,
+			);
+			productName = UURemoteTV;
+			productReference = DA660AC4A3CD450F8418AE35 /* UURemoteTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B66D69550524A45B5116FE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 06FC5250DDCF4FB2ABC0A042 /* Build configuration list for PBXProject "UURemoteTV" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 1D1FBF210C33474A9736686A;
+			productRefGroup = B7EBA39386104D528C9FEF08 /* Products */;
+			projectDirPath = "";
+			packageReferences = (
+				54EF7E902300479E91B26CC7 /* XCRemoteSwiftPackageReference "webrtc-xcframework" */,
+			);
+			projectRoot = "";
+			targets = (
+				B1CD5A89E8704E07BEFE75E6 /* UURemoteTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F4F84D4A2B4412BAED8EED5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13335196380B4DDABE4D8896 /* ConnectOptions.swift in Sources */,
+				68D3C120E58041C7AB07EFFC /* WebRTCShims.swift in Sources */,
+				7F0E5C8B6D90430DA2F83531 /* WebRTCMediaSession.swift in Sources */,
+				22BFADF4AFDF45409F6ED265 /* RemoteVideoView.swift in Sources */,
+
+				2030F29E0DF4479BB9D477E4 /* UURemoteTVApp.swift in Sources */,
+				4E04EED4330947288B5AC730 /* AppModel.swift in Sources */,
+				E8398A44D08645C38116D370 /* RootView.swift in Sources */,
+				9548F290286D4FB287786FB4 /* LoginView.swift in Sources */,
+				4BCCAB237B42446DAF388609 /* DeviceListView.swift in Sources */,
+				C7D52D57DE0D45CB8B929E4B /* SessionView.swift in Sources */,
+				DCB20055809B4DCBA0AB8E6E /* APIConfig.swift in Sources */,
+				FE3F708742F44A25A2A3D28B /* Credentials.swift in Sources */,
+				E4EE839793A8442090CEF693 /* HMACSigner.swift in Sources */,
+				31631AB742CD41E49BA182D0 /* Models.swift in Sources */,
+				F8EDBC06AA6B496EB875682B /* HTTPClient.swift in Sources */,
+				337F1AABBB834173ABC02362 /* LoginService.swift in Sources */,
+				C701A79BF81A40FD8D5F0203 /* DeviceService.swift in Sources */,
+				A3977DDBAAC24E90B7A6E830 /* SignalingClient.swift in Sources */,
+				1D0A9737C23941BABA34FE60 /* MediaSession.swift in Sources */
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F37021EC1CF44BC8059EA34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+		765A18606FD84628BC9072A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9649BB344D9E45F3975B5EF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		6869EA01920549F7BB973E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1FA601A6E7B4ED6B1776A02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = UURemoteTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unofficial.uuremote.tv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		2D59E0BFAE6C42BBB6FF12D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = UURemoteTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unofficial.uuremote.tv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06FC5250DDCF4FB2ABC0A042 /* Build configuration list for PBXProject "UURemoteTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9649BB344D9E45F3975B5EF7 /* Debug */,
+				6869EA01920549F7BB973E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A4AE3A9EC94460DBA3697F2 /* Build configuration list for PBXNativeTarget "UURemoteTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1FA601A6E7B4ED6B1776A02 /* Debug */,
+				2D59E0BFAE6C42BBB6FF12D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54EF7E902300479E91B26CC7 /* XCRemoteSwiftPackageReference "webrtc-xcframework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livekit/webrtc-xcframework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 125.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1735C4555A8E44CF85D83F86 /* LiveKitWebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54EF7E902300479E91B26CC7 /* XCRemoteSwiftPackageReference "webrtc-xcframework" */;
+			productName = LiveKitWebRTC;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+	};
+	rootObject = 7B66D69550524A45B5116FE8 /* Project object */;
+}

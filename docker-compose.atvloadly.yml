@@ -1,0 +1,16 @@
+# Run on a Linux host on the SAME LAN as your Apple TV (home NAS / mini PC).
+# This cloud box usually cannot see your living-room Apple TV over Bonjour.
+version: '3.3'
+services:
+  atvloadly:
+    container_name: atvloadly
+    image: bitxeno/atvloadly:latest
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - ./atvloadly-data:/data
+      - /var/run/dbus:/var/run/dbus
+      - /var/run/avahi-daemon:/var/run/avahi-daemon
+    ports:
+      - "5533:80"
+    restart: unless-stopped
