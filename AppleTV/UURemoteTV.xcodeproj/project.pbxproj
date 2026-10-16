@@ -6,9 +6,9 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		627508307BC64E09AB42E831 /* ConnectOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConnectOptions.swift; path = ../../Protocol/Sources/UURemoteProtocol/ConnectOptions.swift; sourceTree = "<group>"; };
-		9D80A6E83FAB4BACA2409339 /* WebRTCShims.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebRTCShims.swift; path = ../../Protocol/Sources/UURemoteProtocol/WebRTCShims.swift; sourceTree = "<group>"; };
-		F6366D87432E46DCACC2DCA6 /* WebRTCMediaSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebRTCMediaSession.swift; path = ../../Protocol/Sources/UURemoteProtocol/WebRTCMediaSession.swift; sourceTree = "<group>"; };
+		627508307BC64E09AB42E831 /* ConnectOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConnectOptions.swift; path = ../Protocol/Sources/UURemoteProtocol/ConnectOptions.swift; sourceTree = "<group>"; };
+		9D80A6E83FAB4BACA2409339 /* WebRTCShims.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebRTCShims.swift; path = ../Protocol/Sources/UURemoteProtocol/WebRTCShims.swift; sourceTree = "<group>"; };
+		F6366D87432E46DCACC2DCA6 /* WebRTCMediaSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebRTCMediaSession.swift; path = ../Protocol/Sources/UURemoteProtocol/WebRTCMediaSession.swift; sourceTree = "<group>"; };
 		7697BF6957E14E80B59201AC /* RemoteVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteVideoView.swift; sourceTree = "<group>"; };
 		DA660AC4A3CD450F8418AE35 /* UURemoteTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UURemoteTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBBB82687954E22B37EB166 /* UURemoteTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UURemoteTVApp.swift; sourceTree = "<group>"; };
@@ -18,15 +18,15 @@
 		11F8D31FA8024DE5970907FC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8FEEA0EEDAA14CDF9894295B /* DeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListView.swift; sourceTree = "<group>"; };
 		50F6A8A22F08415BA0B4CB9C /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
-		7170B8F1072F4D9D8ABA51C1 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIConfig.swift; path = ../../Protocol/Sources/UURemoteProtocol/APIConfig.swift; sourceTree = "<group>"; };
-		21A2B610A6314402A2ACD11C /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Credentials.swift; path = ../../Protocol/Sources/UURemoteProtocol/Credentials.swift; sourceTree = "<group>"; };
-		7FEA36AA90804383806D29DC /* HMACSigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HMACSigner.swift; path = ../../Protocol/Sources/UURemoteProtocol/HMACSigner.swift; sourceTree = "<group>"; };
-		10A436EDC1B5414292632583 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Models.swift; path = ../../Protocol/Sources/UURemoteProtocol/Models.swift; sourceTree = "<group>"; };
-		8A3A67D02911470E91715D1A /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HTTPClient.swift; path = ../../Protocol/Sources/UURemoteProtocol/HTTPClient.swift; sourceTree = "<group>"; };
-		0CF117EC9C754B398B7F4433 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginService.swift; path = ../../Protocol/Sources/UURemoteProtocol/LoginService.swift; sourceTree = "<group>"; };
-		3ECB5904ADAB4FD9985978F9 /* DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeviceService.swift; path = ../../Protocol/Sources/UURemoteProtocol/DeviceService.swift; sourceTree = "<group>"; };
-		A5A1A9551DD04349A291FB44 /* SignalingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignalingClient.swift; path = ../../Protocol/Sources/UURemoteProtocol/SignalingClient.swift; sourceTree = "<group>"; };
-		D01696B40A49411F839AFEA4 /* MediaSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MediaSession.swift; path = ../../Protocol/Sources/UURemoteProtocol/MediaSession.swift; sourceTree = "<group>"; };
+		7170B8F1072F4D9D8ABA51C1 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIConfig.swift; path = ../Protocol/Sources/UURemoteProtocol/APIConfig.swift; sourceTree = "<group>"; };
+		21A2B610A6314402A2ACD11C /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Credentials.swift; path = ../Protocol/Sources/UURemoteProtocol/Credentials.swift; sourceTree = "<group>"; };
+		7FEA36AA90804383806D29DC /* HMACSigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HMACSigner.swift; path = ../Protocol/Sources/UURemoteProtocol/HMACSigner.swift; sourceTree = "<group>"; };
+		10A436EDC1B5414292632583 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Models.swift; path = ../Protocol/Sources/UURemoteProtocol/Models.swift; sourceTree = "<group>"; };
+		8A3A67D02911470E91715D1A /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HTTPClient.swift; path = ../Protocol/Sources/UURemoteProtocol/HTTPClient.swift; sourceTree = "<group>"; };
+		0CF117EC9C754B398B7F4433 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginService.swift; path = ../Protocol/Sources/UURemoteProtocol/LoginService.swift; sourceTree = "<group>"; };
+		3ECB5904ADAB4FD9985978F9 /* DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeviceService.swift; path = ../Protocol/Sources/UURemoteProtocol/DeviceService.swift; sourceTree = "<group>"; };
+		A5A1A9551DD04349A291FB44 /* SignalingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignalingClient.swift; path = ../Protocol/Sources/UURemoteProtocol/SignalingClient.swift; sourceTree = "<group>"; };
+		D01696B40A49411F839AFEA4 /* MediaSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MediaSession.swift; path = ../Protocol/Sources/UURemoteProtocol/MediaSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXBuildFile section */

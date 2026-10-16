@@ -1,0 +1,172 @@
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build tvOS IPA · 38944575073
+Triggered via push less than a minute ago
+
+JOBS
+* build (ID 117120347223)
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build tvOS IPA · 38944575073
+Triggered via push less than a minute ago
+
+JOBS
+* build (ID 117120347223)
+  ✓ Set up job
+  * Run actions/checkout@v4
+  * Select Xcode
+  * Resolve packages
+  * Archive (unsigned CODE_SIGNING_ALLOWED=NO)
+  * Pack IPA
+  * Upload IPA
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build tvOS IPA · 38944575073
+Triggered via push less than a minute ago
+
+JOBS
+* build (ID 117120347223)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Select Xcode
+  * Resolve packages
+  * Archive (unsigned CODE_SIGNING_ALLOWED=NO)
+  * Pack IPA
+  * Upload IPA
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build tvOS IPA · 38944575073
+Triggered via push less than a minute ago
+
+JOBS
+* build (ID 117120347223)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Select Xcode
+  * Resolve packages
+  * Archive (unsigned CODE_SIGNING_ALLOWED=NO)
+  * Pack IPA
+  * Upload IPA
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build tvOS IPA · 38944575073
+Triggered via push less than a minute ago
+
+JOBS
+* build (ID 117120347223)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Select Xcode
+  * Resolve packages
+  * Archive (unsigned CODE_SIGNING_ALLOWED=NO)
+  * Pack IPA
+  * Upload IPA
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build tvOS IPA · 38944575073
+Triggered via push less than a minute ago
+
+JOBS
+* build (ID 117120347223)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Select Xcode
+  * Resolve packages
+  * Archive (unsigned CODE_SIGNING_ALLOWED=NO)
+  * Pack IPA
+  * Upload IPA
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build tvOS IPA · 38944575073
+Triggered via push less than a minute ago
+
+JOBS
+* build (ID 117120347223)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Select Xcode
+  * Resolve packages
+  * Archive (unsigned CODE_SIGNING_ALLOWED=NO)
+  * Pack IPA
+  * Upload IPA
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build tvOS IPA · 38944575073
+Triggered via push less than a minute ago
+
+JOBS
+* build (ID 117120347223)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Select Xcode
+  * Resolve packages
+  * Archive (unsigned CODE_SIGNING_ALLOWED=NO)
+  * Pack IPA
+  * Upload IPA
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build tvOS IPA · 38944575073
+Triggered via push less than a minute ago
+
+JOBS
+* build (ID 117120347223)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Select Xcode
+  ✓ Resolve packages
+  * Archive (unsigned CODE_SIGNING_ALLOWED=NO)
+  * Pack IPA
+  * Upload IPA
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build tvOS IPA · 38944575073
+Triggered via push less than a minute ago
+
+JOBS
+* build (ID 117120347223)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Select Xcode
+  ✓ Resolve packages
+  * Archive (unsigned CODE_SIGNING_ALLOWED=NO)
+  * Pack IPA
+  * Upload IPA
+  * Post Run actions/checkout@v4
+Refreshing run status every 3 seconds. Press Ctrl+C to quit.
+
+* main Build tvOS IPA · 38944575073
+Triggered via push less than a minute ago
+
+JOBS
+* build (ID 117120347223)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Select Xcode
+  ✓ Resolve packages
+  X Archive (unsigned CODE_SIGNING_ALLOWED=NO)
+  - Pack IPA
+  - Upload IPA
+  ✓ Post Run actions/checkout@v4
+  * Complete job
+X main Build tvOS IPA · 38944575073
+Triggered via push less than a minute ago
+
+JOBS
+X build in 36s (ID 117120347223)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Select Xcode
+  ✓ Resolve packages
+  X Archive (unsigned CODE_SIGNING_ALLOWED=NO)
+  - Pack IPA
+  - Upload IPA
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
