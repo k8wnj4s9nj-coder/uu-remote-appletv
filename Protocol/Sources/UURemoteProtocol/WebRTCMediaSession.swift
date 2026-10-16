@@ -367,8 +367,8 @@ public final class UUWebRTCMediaSession: UUMediaSession {
     }
 
     public func start(room: UURoomCredentials, signaling: UUSignalingClient) async throws {
-        onConnectionState?("WebRTC 未链接 — 仅信令。Mac 上请按 README 添加 LiveKit WebRTC SPM。")
-        onFrameHint?("Add package: https://github.com/livekit/webrtc-xcframework (tvOS 17+)")
+        onConnectionState?("WebRTC 未链接 — 仅信令（本构建 stub）")
+        onFrameHint?("本构建暂无 WebRTC 画面，登录与设备列表可用")
         try await stub.start(room: room, signaling: signaling)
     }
 

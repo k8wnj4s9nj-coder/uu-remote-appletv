@@ -29,7 +29,7 @@ public final class UUStubMediaSession: UUMediaSession, @unchecked Sendable {
                 self.onConnectionState?("signaling: connected")
             case .roomInfoAck:
                 self.onConnectionState?("signaling: room_info ack (stub — no WebRTC)")
-                self.onFrameHint?("Link LiveKit WebRTC to enable frames")
+                self.onFrameHint?("本构建暂无 WebRTC 画面，登录与设备列表可用")
             case .soac(let msg):
                 Task { await self.handleRemoteSoac(msg) }
             case .disconnected(let reason):
@@ -62,17 +62,19 @@ public final class UURemoteSession: @unchecked Sendable {
 
     public init(credentials: UUCredentials, media: UUMediaSession? = nil) {
         self.devices = UUDeviceService(credentials: credentials)
-        let session: UUMediaSession
+        let webrtc: UUWebRTCMediaSession?
         if let media {
-            session = media
+            self.media = media
+            webrtc = media as? UUWebRTCMediaSession
         } else {
-            let webrtc = UUWebRTCMediaSession(clientId: credentials.clientId)
-            webrtc.onRemoteVideoTrack = { [weak self] track in
-                self?.onVideoTrack?(track)
-            }
-            session = webrtc
+            let created = UUWebRTCMediaSession(clientId: credentials.clientId)
+            self.media = created
+            webrtc = created
         }
-        self.media = session
+        // Wire callbacks only after all stored properties are initialized.
+        webrtc?.onRemoteVideoTrack = { [weak self] track in
+            self?.onVideoTrack?(track)
+        }
         self.media.onConnectionState = { [weak self] s in self?.onState?(s) }
         self.media.onFrameHint = { [weak self] s in self?.onState?(s) }
     }
