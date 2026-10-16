@@ -57,7 +57,7 @@ struct RemoteVideoView: View {
                 Image(systemName: "exclamationmark.triangle")
                     .font(.system(size: 48))
                 Text("WebRTC 未链接")
-                Text("请在 Mac Xcode 添加 LiveKit WebRTC SPM")
+                Text("本构建暂无 WebRTC 画面，登录与设备列表可用")
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }

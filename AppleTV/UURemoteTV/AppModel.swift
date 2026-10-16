@@ -39,10 +39,11 @@ final class AppModel: ObservableObject {
         qrContent = nil
         loginPhaseLabel = "准备设备身份…"
         let service = UULoginService(credentials: credentials ?? UUCredentials())
-        loginTask = Task {
+        loginTask = Task { [weak self] in
+            guard let self else { return }
             do {
-                let creds = try await service.runQRLogin { [weak self] phase in
-                    Task { @MainActor in
+                let creds = try await service.runQRLogin { phase in
+                    Task { @MainActor [weak self] in
                         guard let self else { return }
                         switch phase {
                         case .preparingDevice:
@@ -65,7 +66,7 @@ final class AppModel: ObservableObject {
                 }
                 self.credentials = creds
                 self.route = .devices
-                await refreshDevices()
+                await self.refreshDevices()
             } catch is CancellationError {
                 // ignore
             } catch {

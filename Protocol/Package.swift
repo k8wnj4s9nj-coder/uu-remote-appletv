@@ -11,16 +11,11 @@ let package = Package(
     products: [
         .library(name: "UURemoteProtocol", targets: ["UURemoteProtocol"])
     ],
-    dependencies: [
-        // Provides tvOS 17+ WebRTC binary (LiveKitWebRTC / LKRTC* symbols).
-        .package(url: "https://github.com/livekit/webrtc-xcframework", from: "125.0.0")
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "UURemoteProtocol",
-            dependencies: [
-                .product(name: "LiveKitWebRTC", package: "webrtc-xcframework")
-            ],
+            dependencies: [],
             path: "Sources/UURemoteProtocol"
         )
     ]
